@@ -1,0 +1,56 @@
+{
+  "KundenDialog.tsx": {
+    "vorname": "z. B. Max",
+    "nachname": "z. B. Müller",
+    "firma": "z. B. Handelskonzern GmbH",
+    "strasse": "z. B. Hauptstraße",
+    "hausnummer": "z. B. 42",
+    "plz": "z. B. 10115",
+    "ort": "z. B. Berlin",
+    "email": "z. B. max@müller.de",
+    "bemerkungen_kunde": "Besondere Wünsche, Zahlungsbedingungen, Kontaktregeln..."
+  },
+  "MaterialDialog.tsx": {
+    "bezeichnung": "z. B. Kupferrohr DN15",
+    "artikelnummer": "z. B. KR-DN15-2024",
+    "kategorie": "Wähle eine Kategorie",
+    "einheit": "Wähle eine Einheit",
+    "einkaufspreis": "z. B. 5,50",
+    "verkaufspreis": "z. B. 12,99",
+    "bemerkungen_material": "Hersteller, Verfügbarkeit, Lagertipps..."
+  },
+  "AuftraegeDialog.tsx": {
+    "auftragsnummer": "z. B. AU-2024-0042",
+    "bezeichnung": "z. B. Heizungsinstallation OG",
+    "kunde": "Welcher Kunde?",
+    "ansprechpartner": "z. B. Herr Schmidt",
+    "auftragsdatum": "Wann liegt die Bestellung vor?",
+    "fertigstellungsdatum": "Gewünschter Abschluss?",
+    "status": "Wähle den Status",
+    "prioritaet": "Wähle eine Priorität",
+    "beschreibung": "Arbeitsschritte, Anforderungen, besondere Hinweise...",
+    "bemerkungen_auftrag": "Kundenanforderungen, Besonderheiten, Rechnungsmodal..."
+  },
+  "PositionenDialog.tsx": {
+    "auftrag": "Zu welchem Auftrag?",
+    "positionstyp": "Wähle den Positionstyp",
+    "positions_bezeichnung": "z. B. Kupferrohr verlegen",
+    "material": "Welches Material nutzen?",
+    "menge": "z. B. 5",
+    "einheit_position": "Wähle die Einheit",
+    "einzelpreis": "z. B. 25,50",
+    "gesamtpreis": "Berechnet sich automatisch",
+    "bemerkungen_position": "Details zu Verarbeitung, Besonderheiten..."
+  },
+  "PruefprotokolleDialog.tsx": {
+    "auftrag_pruef": "Welcher Auftrag?",
+    "pruefdatum": "Wann war die Prüfung?",
+    "pruefer_vorname": "z. B. Thomas",
+    "pruefer_nachname": "z. B. Wagner",
+    "pruefpunkte": "Durchgeführte Prüfschritte, Normen, Kriterien...",
+    "ergebnis": "Wähle das Prüfergebnis",
+    "maengelbeschreibung": "Festgestellte Mängel oder Abweichungen...",
+    "freigabe_erteilt": "Ist die Freigabe erteilt?",
+    "bemerkungen_pruef": "Weitere Anmerkungen zur Prüfung..."
+  }
+}

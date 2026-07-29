@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "Kunden": {
+      "placeholders_set": 9,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten. Keine Berechnung möglich (keine numerischen Felder, keine Lookup-Ketten, keine Datumspaare mit Dauer). Nur fieldOrder und Placeholders sinnvoll."
+    },
+    "Material": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Stammdaten-Preisverzeichnis. Einkaufs- und Verkaufspreis sind unabhängige Katalogwerte, kein Mengenfeld im Dialog, daher keine Produktberechnung. Margin/Gewinn optional, nicht gefordert."
+    },
+    "Aufträge": {
+      "placeholders_set": 9,
+      "defaults_keys": ["auftragsdatum", "fertigstellungsdatum", "status", "prioritaet"],
+      "computed_keys": [],
+      "reason": "Auftragsheader mit Kundenref und zwei Datumsfeldern, aber ohne Dauer-Feld und ohne Preisfeld. Preise liegen in Kind-Positionen (1:N). Keine Berechnung möglich. Defaults setzen sinnvolle Startwerte (heute, +14 Tage, Status=Offen)."
+    },
+    "Positionen": {
+      "placeholders_set": 8,
+      "defaults_keys": ["positionstyp", "menge"],
+      "computed_keys": ["gesamtpreis"],
+      "reason": "Archetyp 2 (Produkt): menge × einzelpreis = gesamtpreis (Archetype 2, Multiplikation). Applookup auf Material mit Preis-Target (verkaufspreis), aber Menge sitzt in diesem Dialog – das Material-Feld ist optional und wird manuell verlinkt. Totale Multiplikation ist lokal im Dialog möglich."
+    },
+    "Prüfprotokolle": {
+      "placeholders_set": 9,
+      "defaults_keys": ["pruefdatum", "ergebnis"],
+      "computed_keys": [],
+      "reason": "Erfassungsformular für Prüfungen an Aufträgen. Zwei Namensfelder, Text, Datum, kein numerisches Feld — keine Berechnung. Defaults: Prüfdatum=heute, Ergebnis=Bestanden (positiver Standard-Status)."
+    }
+  }
+}

@@ -1,0 +1,9 @@
+- Kunden (kunden): vorname[string/text], nachname[string/text], firma[string/text], strasse[string/text], hausnummer[string/text], plz[string/text], ort[string/text], telefon[string/tel], email[string/email], bemerkungen_kunde[string/textarea]
+- Material (material): bezeichnung[string/text], artikelnummer[string/text], kategorie[lookup/select], einheit[lookup/select], einkaufspreis[number], verkaufspreis[number], bemerkungen_material[string/textarea]
+- Aufträge (auftraege): auftragsnummer[string/text], bezeichnung[string/text], kunde[applookup/select], ansprechpartner[string/text], auftragsdatum[date/date], fertigstellungsdatum[date/date], status[lookup/select], prioritaet[lookup/radio], beschreibung[string/textarea], bemerkungen_auftrag[string/textarea]
+  → kunde links to app_id 6a6a0ce0a6c5f8f64f583eff
+- Positionen (positionen): auftrag[applookup/select], positionstyp[lookup/radio], positions_bezeichnung[string/text], material[applookup/select], menge[number], einheit_position[lookup/select], einzelpreis[number], gesamtpreis[number], bemerkungen_position[string/textarea]
+  → auftrag links to app_id 6a6a0ce8517276be5084b88b
+  → material links to app_id 6a6a0ce7f0b40726bde759f9
+- Prüfprotokolle (pruefprotokolle): auftrag_pruef[applookup/select], pruefdatum[date/date], pruefer_vorname[string/text], pruefer_nachname[string/text], pruefpunkte[string/textarea], ergebnis[lookup/radio], maengelbeschreibung[string/textarea], fotos[file], freigabe_erteilt[bool], bemerkungen_pruef[string/textarea]
+  → auftrag_pruef links to app_id 6a6a0ce8517276be5084b88b
